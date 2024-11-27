@@ -1,0 +1,188 @@
+.link span:hover {
+    color: #757591 !important;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background-color: #372554 !important;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+.custom-modal.show {
+    display: block;
+}
+
+input:focus, button:focus, textarea:focus, select:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.navbar, .footer, .footer2, .modal-header{
+    background-color: #372554 !important;
+}
+
+
+.header-img {
+    background-image: url("../Images/newbanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 100px;
+}
+
+.mob{
+    border-radius: 5px;
+    background-color: #52528C !important;
+  }
+
+
+.light-blue{
+    background-color: #7C9EB2;
+}
+
+.violet{
+    background-color: #372554;
+}
+
+.logo {
+    filter: invert(100%);
+}
+.bg-primary-custom {
+    background-color: #A6A9F0 !important;
+}
+.btn-primary-custom {
+    background-color: #52528C !important;
+    border-color: #52528C !important;
+    color: #eceaf5 !important;
+}
+.btn-primary-custom:hover {
+    background-color: #7C9EB2 !important;
+    border-color: #7C9EB2 !important;
+}
+.text-primary-custom {
+    color: #4C4FEE !important;
+}
+.bg-light-custom {
+    background-color: #989ca3 !important;
+}
+.icon-link {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.icon-link:hover {
+    color: #52528C;
+}
+.team-img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+}
+.modal-body img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+#cta {
+    background-image: url('../images/banner-infopage.png'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    padding: 5rem 0; 
+    position: relative; 
+    overflow: hidden;
+}
+
+#cta .container-fluid {
+    max-width: 100%; 
+    padding: 0; 
+    margin: 0 auto; 
+}
+
+.card {
+    margin: 15px;
+    transition: transform 0.2s;
+}
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;  
+}
+
+.card-custom {
+    margin-bottom: 20px;
+    border: 1px solid #212529; 
+    border-radius: 0.25rem; 
+    transition: box-shadow 0.2s ease;
+}
+
+.card-custom:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.submission-message {
+    max-height: 130px; 
+    overflow: hidden; 
+    position: relative;
+}
+
+.btn {
+    margin: 5px;
+}
+
+.submission-date {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #b0b0b0;
+}
+
+.submission-details {
+    width: 50%; 
+}
+
+.submission-message {
+    width: 50%; 
+}
+
+.submission-date {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #b0b0b0;
+}
+
+.submission-container {
+    display: flex; /* Display submissions in a row */
+    flex-direction: column; /* Column layout */
+}
+
+@media (min-width: 768px) {
+    .submission-container {
+        flex-direction: row; /* Switch to row layout on larger screens */
+        flex-wrap: wrap; /* Allow wrapping of cards */
+    }
+
+    .submission-details, .submission-message {
+        flex: 1; /* Allow details and message to take equal space */
+        padding: 10px; /* Padding inside each section */
+    }
+}
